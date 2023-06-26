@@ -43,4 +43,3 @@ print("2번 자동차의 색상은{}이고, 속도는{}Km 입니다".format(car2
 car3.upSpeed(150)
 scr3.downSpeed(50)
 print("3번 자동차의 색상은{}이고, 속도는{}Km 입니다".format(car3.color, car3.speed))
-

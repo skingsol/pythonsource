@@ -82,10 +82,16 @@ while True:
         with open("resource/origin.txt", "r", encoding="utf-8") as f:
             content = f.read()
         #암호화작성 파일작성
-        with open("resource/origin.txt", "w", encoding="utf-8") as f:
+        with open("resource/encry.txt", "w", encoding="utf-8") as f:
             for c in content:
-                f.write(chr(ord(f) + 100))
+                f.write(chr(ord(c) + 100))
     elif no == 2:
-        pass
+        # encry.txt 읽어온 후 원래 내용으로 화면 출력
+        with open("resource/encry.txt", "r", encoding="utf-8") as f:
+            content = f.read()
+            for i in range(len(content)):
+                print(chr(ord(content[i])-100), end="")
     else:
         break
+
+    # rb, wb : read binary, write binary ==> text 파일 아닌 것들

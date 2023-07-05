@@ -10,3 +10,6 @@ class Calc:
     def adder(self, num):
         self.result += num
         return self.result
+
+
+
